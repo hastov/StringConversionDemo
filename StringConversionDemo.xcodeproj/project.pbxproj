@@ -16,6 +16,7 @@
 		21B9DC822928EFDB00B91867 /* StringConversionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B9DC812928EFDB00B91867 /* StringConversionDemoTests.swift */; };
 		21B9DC8C2928EFDB00B91867 /* StringConversionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B9DC8B2928EFDB00B91867 /* StringConversionDemoUITests.swift */; };
 		21B9DC8E2928EFDB00B91867 /* StringConversionDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B9DC8D2928EFDB00B91867 /* StringConversionDemoUITestsLaunchTests.swift */; };
+		21B9DC9C2928EFED00B91867 /* StringConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 21B9DC9B2928EFED00B91867 /* StringConversion */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B9DC9C2928EFED00B91867 /* StringConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = StringConversionDemo;
+			packageProductDependencies = (
+				21B9DC9B2928EFED00B91867 /* StringConversion */,
+			);
 			productName = StringConversionDemo;
 			productReference = 21B9DC672928EFDA00B91867 /* StringConversionDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 21B9DC5E2928EFDA00B91867;
+			packageReferences = (
+				21B9DC9A2928EFED00B91867 /* XCRemoteSwiftPackageReference "StringConversion" */,
+			);
 			productRefGroup = 21B9DC682928EFDA00B91867 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -596,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21B9DC9A2928EFED00B91867 /* XCRemoteSwiftPackageReference "StringConversion" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hastov/StringConversion.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21B9DC9B2928EFED00B91867 /* StringConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B9DC9A2928EFED00B91867 /* XCRemoteSwiftPackageReference "StringConversion" */;
+			productName = StringConversion;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21B9DC5F2928EFDA00B91867 /* Project object */;
 }

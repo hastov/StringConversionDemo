@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "stringconversion",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hastov/StringConversion.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "28cdfad7cc678183f490cc7ecdf893c322347279"
+      }
+    }
+  ],
+  "version" : 2
+}
